@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4 my-5" *ngFor="let perfume of MyPerfume">
+            <div class="card" style="width: 18rem;"  >
+                <img src="{{perfume.image}}" class="card-img-top" alt="...">
+            
+                <div class="card-body">
+                  <h5 class="card-title">{{perfume.name}}</h5>
+                  <p class="card-text">{{perfume.description}}</p>
+                  <span class="badge rounded-pill text-bg-secondary" *ngIf="perfume.rating > 1 && perfume.stoke >1">Secondary</span>
+                  <span class="badge rounded-pill text-bg-success" *ngIf="perfume.rating > 1 && perfume.stoke >1">Secondary</span>
+
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            
+              </div>
+        </div>
+    </div>
+</div>
+
+
